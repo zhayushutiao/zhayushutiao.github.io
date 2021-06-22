@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>jQuery使用 | 明月清风的博客</title>
+  <title>ng-template、ng-content、ng-container | 明月清风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="jquery 使用 操作属性 attr() removeAttr() 操作内容 html() text() 操作值 val() 操作样式 css() 操作 class 类 addClass() removeClass() toggleClass() hasClass() 操作事件 click() blur() focus() change()…">
+  <meta name="description" content="ng-template、ng-content、ng-container一、ng-templateng-template 是 Angular 结构型指令中的一种，用于定义模板渲染 HTML(模板加载)。定义的模板不会直接显示出来，需要通过其他结构型指令（如 ng-if）或 template-ref 将模块内容渲染到页面中。 1234&lt;div *ngIf&#x3D;&quot;show else xxxx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery使用">
-<meta property="og:url" content="http://yoursite.com/2020/09/08/jQuery%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:title" content="ng-template、ng-content、ng-container">
+<meta property="og:url" content="http://yoursite.com/2021/06/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/index.html">
 <meta property="og:site_name" content="明月清风的博客">
-<meta property="og:description" content="jquery 使用 操作属性 attr() removeAttr() 操作内容 html() text() 操作值 val() 操作样式 css() 操作 class 类 addClass() removeClass() toggleClass() hasClass() 操作事件 click() blur() focus() change()…">
+<meta property="og:description" content="ng-template、ng-content、ng-container一、ng-templateng-template 是 Angular 结构型指令中的一种，用于定义模板渲染 HTML(模板加载)。定义的模板不会直接显示出来，需要通过其他结构型指令（如 ng-if）或 template-ref 将模块内容渲染到页面中。 1234&lt;div *ngIf&#x3D;&quot;show else xxxx">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-08T11:42:03.000Z">
-<meta property="article:modified_time" content="2021-04-08T07:04:52.504Z">
+<meta property="article:published_time" content="2021-06-22T02:46:11.000Z">
+<meta property="article:modified_time" content="2021-06-22T02:46:11.208Z">
 <meta property="article:author" content="明月清风">
-<meta property="article:tag" content="js">
-<meta property="article:tag" content="jQuery">
+<meta property="article:tag" content="angular">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="明月清风的博客" type="application/atom+xml">
@@ -150,49 +149,55 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-jQuery使用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-ng-template、ng-content、ng-container" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      jQuery使用
+      ng-template、ng-content、ng-container
     </h1>
   
 
         
-        <a href="/2020/09/08/jQuery%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2020-09-08T11:42:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-08</time>
+        <a href="/2021/06/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/" class="archive-article-date">
+  	<time datetime="2021-06-22T02:46:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="jquery-使用"><a href="#jquery-使用" class="headerlink" title="jquery 使用"></a>jquery 使用</h2><ul>
-<li>操作属性 attr() removeAttr()</li>
-<li>操作内容 html() text()</li>
-<li>操作值 val()</li>
-<li>操作样式 css()</li>
-<li>操作 class 类 addClass() removeClass() toggleClass() hasClass()</li>
-<li>操作事件 click() blur() focus() change()…</li>
+        <h1 id="ng-template、ng-content、ng-container"><a href="#ng-template、ng-content、ng-container" class="headerlink" title="ng-template、ng-content、ng-container"></a>ng-template、ng-content、ng-container</h1><h2 id="一、ng-template"><a href="#一、ng-template" class="headerlink" title="一、ng-template"></a>一、ng-template</h2><p>ng-template 是 Angular 结构型指令中的一种，用于定义模板渲染 HTML(模板加载)。定义的模板不会直接显示出来，需要通过其他结构型指令（如 ng-if）或 template-ref 将模块内容渲染到页面中。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> *<span class="attr">ngIf</span>=<span class="string">&quot;show else xxxx&quot;</span>&gt;</span>控制ng-template是否显示和隐藏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ng-template</span> #<span class="attr">xxxx</span>&gt;</span></span><br><span class="line">  ng-template中的内容显示和隐藏，通过结构性指令*ngif来控制，当ngif为false,这显示</span><br><span class="line"><span class="tag">&lt;/<span class="name">ng-template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二、ng-container"><a href="#二、ng-container" class="headerlink" title="二、ng-container"></a>二、ng-container</h2><p>ng-container 既不是一个 Component 组件，也不是一个 Directive 指令，只是单纯的一个特殊 tag 标签。ng-container 可以直接包裹任何元素，包括文本，但本身不会生成元素标签，也不会影响页面样式和布局。包裹的内容，如果不通过其他指令控制，会直接渲染到页面中。</p>
+<ul>
+<li>可以把 ng-container 简单理解为一个逻辑容器。用来做一些逻辑处理的。减少不必要的 html 标签。</li>
 </ul>
-<a id="more"></a>
+<p>ng-container 有一个用处就是配合 ngFor 和 ngIf 使用。我们知道 ngFor 和 ngIf 不能同时处在同一个元素上。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-container</span> *<span class="attr">ngFor</span>=<span class="string">&quot;let item of arr&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> *<span class="attr">ngIf</span>=<span class="string">&quot;item % 2 === 0&quot;</span>&gt;</span>&#123;&#123;item&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ng-container</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="三、ng-content-插槽"><a href="#三、ng-content-插槽" class="headerlink" title="三、ng-content 插槽"></a>三、ng-content 插槽</h2><p>在实际的使用中，我们会用到内容投影，即插槽的概念。在 vue 中可以通过 slot 来标记插槽，从而达到从父组件向子组件传递显示内容。</p>
+<p>在 angular 中，同样可以使用 ng-content 来实现与 vue 中的 slot 同样的功能和效果。</p>
+<h3 id="简单投影（单个插槽-默认插槽-匿名插槽）"><a href="#简单投影（单个插槽-默认插槽-匿名插槽）" class="headerlink" title="简单投影（单个插槽| 默认插槽| 匿名插槽）"></a>简单投影（单个插槽| 默认插槽| 匿名插槽）</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>我是嵌入的外部内容，相当于vue的slot<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是ng content 内容投影<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>ng content测试<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="针对性投影-具名插槽"><a href="#针对性投影-具名插槽" class="headerlink" title="针对性投影(具名插槽)"></a>针对性投影(具名插槽)</h3><p>针对性投影，相当于 vue 中 slot 的 name 属性和组件的 slot 属性的映射关系</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;slot&quot;</span>&gt;</span>我是嵌入的外部内容，相当于vue的slot<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是ng content 内容投影<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>ng content测试<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span> <span class="attr">select</span>=<span class="string">&quot;p&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span> <span class="attr">select</span>=<span class="string">&quot;.slot&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="ngProjectAs"><a href="#ngProjectAs" class="headerlink" title="ngProjectAs"></a>ngProjectAs</h3><p>通过 ng-content 的 select 属性可以指定 html 标签或者组件投射 ng-content 位置上来。但是呢有个限制条件。不管是 select 标签或者组件的名字、或者 class、或者是属性他们都是作用在直接子节点上。</p>
+<p>有时你的内部组件会被隐藏在另一个更大的组件中。有时你只需要将其包装在额外的容器中即可应用 ngIf 或 ngSwitch。无论什么原因，通常情况下，你的内部组件不是包装器的直接子节点。这时可以设置 ngProjectAs 属性：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-container</span> <span class="attr">ngProjectAs</span>=<span class="string">&quot;slot&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>div<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ng-container</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-container</span> <span class="attr">ngProjectAs</span>=<span class="string">&quot;slot&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>div<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ng-container</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>筛选 DOM 元素</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 选择器筛选</span></span><br><span class="line"><span class="comment">// 1)找第一个</span></span><br><span class="line">$(<span class="string">&quot;ul li:first-child&quot;</span>);</span><br><span class="line">$(<span class="string">&quot;ul li:first&quot;</span>);</span><br><span class="line"><span class="comment">// 2)找最后一个</span></span><br><span class="line">$(<span class="string">&quot;ul li:last-child&quot;</span>);</span><br><span class="line">$(<span class="string">&quot;ul li:last&quot;</span>);</span><br><span class="line"><span class="comment">// 3)找第n个</span></span><br><span class="line">$(<span class="string">&quot;ul li:nth-child(4)&quot;</span>);</span><br><span class="line">$(<span class="string">&quot;ul li:eq(数字下标)&quot;</span>);</span><br><span class="line">$(<span class="string">&quot;ul li&quot;</span>).eq(<span class="number">4</span>);</span><br><span class="line"><span class="comment">// 4)其他</span></span><br><span class="line">$(<span class="string">&quot;ul li:not(.current)&quot;</span>); <span class="comment">//不是current类的</span></span><br><span class="line">$(<span class="string">&quot;ul li:odd&quot;</span>); <span class="comment">//奇数下标个</span></span><br><span class="line">$(<span class="string">&quot;ul li:event&quot;</span>); <span class="comment">//偶数下标个</span></span><br><span class="line">$(<span class="string">&quot;ul li:gt(4)&quot;</span>); <span class="comment">//下标大于4的</span></span><br><span class="line">$(<span class="string">&quot;ul li:lt(4)&quot;</span>); <span class="comment">//下标小于4的</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 表单对象属性</span></span><br><span class="line">$(<span class="string">&quot;input[type=button]:enabled&quot;</span>); <span class="comment">//可以用的按钮</span></span><br><span class="line">$(<span class="string">&quot;input[type=button]:disabled&quot;</span>); <span class="comment">//禁用的按钮</span></span><br><span class="line"><span class="comment">//复选框</span></span><br><span class="line">$(<span class="string">&quot;input[name=pro]:checked&quot;</span>); <span class="comment">//选中的复选框</span></span><br><span class="line"><span class="comment">// 下拉列表</span></span><br><span class="line">$(<span class="string">&quot;select option:selected&quot;</span>); <span class="comment">//选中的选项</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查找 DOM 家族</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1)找孩子</span></span><br><span class="line">$(obj).children(<span class="string">&quot;selector&quot;</span>); <span class="comment">//直接子级</span></span><br><span class="line">$(obj).find(<span class="string">&quot;selector&quot;</span>); <span class="comment">//所有子级(可隔代)</span></span><br><span class="line"><span class="comment">// 2)找父级</span></span><br><span class="line">$(obj).parent(<span class="string">&quot;selector&quot;</span>); <span class="comment">//找爸爸</span></span><br><span class="line">$(obj).parents(<span class="string">&quot;selector&quot;</span>); <span class="comment">//找爸爸,爷爷,祖先</span></span><br><span class="line"><span class="comment">// 3)找哥哥</span></span><br><span class="line">$(obj).prev(selector); <span class="comment">//前一个哥哥</span></span><br><span class="line">$(obj).prevAll(selector); <span class="comment">//所有哥哥</span></span><br><span class="line">$(obj).prevUntil(selector); <span class="comment">//找哥哥直到遇到&#x27;selector&#x27;停止</span></span><br><span class="line"><span class="comment">// 4)找弟弟</span></span><br><span class="line">$(obj).next(selector); <span class="comment">//后一个弟弟</span></span><br><span class="line">$(obj).nextAll(selector); <span class="comment">//所有弟弟</span></span><br><span class="line">$(obj).nextUntil(selector); <span class="comment">//找弟弟直到遇到&#x27;selector&#x27;停止</span></span><br><span class="line"><span class="comment">// 5)找兄弟</span></span><br><span class="line">$(obj).siblings(<span class="string">&quot;selector&quot;</span>);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文档处理</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1)添加内容(如果有,就是移动;没有就添加)</span></span><br><span class="line"><span class="comment">// - 追加内容(末端)</span></span><br><span class="line">$(爸爸).append(儿子);</span><br><span class="line">$(儿子).appendTo(爸爸);</span><br><span class="line"></span><br><span class="line"><span class="comment">// - 前置内容(头部)</span></span><br><span class="line">$(爸爸).prepend(儿子);</span><br><span class="line">$(儿子).prependTo(爸爸);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2)前后添加内容(兄弟级)</span></span><br><span class="line"><span class="comment">// - 在后边添加内容</span></span><br><span class="line">$(A).after(B); <span class="comment">//在A后边插入B</span></span><br><span class="line">$(A).insertAfter(B); <span class="comment">//把A插入到B后边</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// - 在前边添加内容</span></span><br><span class="line">$(A).before(B); <span class="comment">//在A前边插入B</span></span><br><span class="line">$(A).insertBefore(B); <span class="comment">//把A插入到B前边</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 3)替换内容/标签</span></span><br><span class="line">$(<span class="string">&quot;旧dom&quot;</span>).replace(<span class="string">&quot;新的&quot;</span>);</span><br><span class="line">$(<span class="string">&quot;新的&quot;</span>).replaceAll($(<span class="string">&quot;旧dom&quot;</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4)删除</span></span><br><span class="line">$(obj).empty(); <span class="comment">//清空内容</span></span><br><span class="line">$(obj).remove(); <span class="comment">//移除整个dom</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 5)复制</span></span><br><span class="line">$(obj).clone(); <span class="comment">//只复制dom</span></span><br><span class="line">$(obj).clone(<span class="literal">true</span>); <span class="comment">//可以复制dom及dom事件处理</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>动画效果</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1)显示/隐藏</span></span><br><span class="line">show(); <span class="comment">//显示</span></span><br><span class="line">hide(); <span class="comment">//隐藏</span></span><br><span class="line">toggle(); <span class="comment">//切换显示/隐藏</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//2)滑动</span></span><br><span class="line">slideDown(); <span class="comment">//展开</span></span><br><span class="line">slideUp(); <span class="comment">//收起折叠</span></span><br><span class="line">slideToggle(); <span class="comment">//切换</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//3)淡入淡出</span></span><br><span class="line">fadeIn(); <span class="comment">//淡入</span></span><br><span class="line">fadeOut(); <span class="comment">//淡出</span></span><br><span class="line">fadeTo(<span class="string">&quot;slow/400/fast&quot;</span>, <span class="number">0.5</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;);</span><br><span class="line">fadeToggle();</span><br><span class="line"></span><br><span class="line"><span class="comment">//4)自定义动画</span></span><br><span class="line">animate(</span><br><span class="line">  &#123;</span><br><span class="line">    param1: value1,</span><br><span class="line">    param2: value2,</span><br><span class="line">  &#125;,</span><br><span class="line">  speed,</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">/* stuff to do after animation is complete */</span></span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-</li>
+<li>ng-content 支持一个 select 属性，可以让你在特定的地方投射具体的内容。该属性支持 CSS 选择器（标签选择器、类选择器、属性选择器、…）来匹配你想要的内容。如果 ng-content 上没有设置 select 属性，它将接收全部内容，或接收不匹配任何其他 ng-content 元素的内容。</li>
 </ul>
 
       
@@ -207,11 +212,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
         		</li>
       		
 		</ul>
@@ -267,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/09/08/jQuery%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/06/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -281,18 +282,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/08/JavaScript%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/06/22/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          JavaScript事件委托
+          ie兼容问题
         
       </div>
     </a>
   
   
-    <a href="/2020/09/04/node%E6%9C%8D%E5%8A%A1%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">node服务常驻后台</div>
+    <a href="/2021/03/23/vuex%E5%BA%94%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vuex应用</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -319,7 +320,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#jquery-%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">jquery 使用</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ng-template%E3%80%81ng-content%E3%80%81ng-container"><span class="toc-number">1.</span> <span class="toc-text">ng-template、ng-content、ng-container</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81ng-template"><span class="toc-number">1.1.</span> <span class="toc-text">一、ng-template</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81ng-container"><span class="toc-number">1.2.</span> <span class="toc-text">二、ng-container</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81ng-content-%E6%8F%92%E6%A7%BD"><span class="toc-number">1.3.</span> <span class="toc-text">三、ng-content 插槽</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E6%8A%95%E5%BD%B1%EF%BC%88%E5%8D%95%E4%B8%AA%E6%8F%92%E6%A7%BD-%E9%BB%98%E8%AE%A4%E6%8F%92%E6%A7%BD-%E5%8C%BF%E5%90%8D%E6%8F%92%E6%A7%BD%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">简单投影（单个插槽| 默认插槽| 匿名插槽）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%92%88%E5%AF%B9%E6%80%A7%E6%8A%95%E5%BD%B1-%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD"><span class="toc-number">1.3.2.</span> <span class="toc-text">针对性投影(具名插槽)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ngProjectAs"><span class="toc-number">1.3.3.</span> <span class="toc-text">ngProjectAs</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -427,7 +428,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">事件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -443,18 +456,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
@@ -467,11 +468,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">vuex</a>
+                <a href="javascript:void(0)" class="js-tag color3">ie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">angular</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -479,11 +484,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">setTimeout</a>
+                <a href="javascript:void(0)" class="js-tag color5">vuex</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">flex</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">setTimeout</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -492,10 +501,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">axios</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
             
             <div class="clearfix"></div>

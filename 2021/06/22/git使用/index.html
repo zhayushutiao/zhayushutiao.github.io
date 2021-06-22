@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>前端面试题整理 | 明月清风的博客</title>
+  <title>git使用 | 明月清风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="清除浮动的几种方法 额外标签法，（缺点：不过这个办法会增加额外的标签使 HTML 结构看起来不够简洁。）  使用 after 伪类 12345.parent:after&amp;#123;content:&quot;&quot;;display:block;clear:both;&amp;#125;  设置定高  overflow：hidden  浮动外部元素   水平垂直居中实现方式 display:flex;">
+  <meta name="description" content="git 版本控制配置用户信息12git config --global user.name &quot;用户名&quot;git config --global user.email &quot;邮箱&quot;  初始化本地仓库在目标文件夹中使用命令 1git init  查看本地仓库的状态1git status">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端面试题整理">
-<meta property="og:url" content="http://yoursite.com/2020/09/08/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/index.html">
+<meta property="og:title" content="git使用">
+<meta property="og:url" content="http://yoursite.com/2021/06/22/git%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="明月清风的博客">
-<meta property="og:description" content="清除浮动的几种方法 额外标签法，（缺点：不过这个办法会增加额外的标签使 HTML 结构看起来不够简洁。）  使用 after 伪类 12345.parent:after&amp;#123;content:&quot;&quot;;display:block;clear:both;&amp;#125;  设置定高  overflow：hidden  浮动外部元素   水平垂直居中实现方式 display:flex;">
+<meta property="og:description" content="git 版本控制配置用户信息12git config --global user.name &quot;用户名&quot;git config --global user.email &quot;邮箱&quot;  初始化本地仓库在目标文件夹中使用命令 1git init  查看本地仓库的状态1git status">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-08T11:48:02.000Z">
-<meta property="article:modified_time" content="2021-04-08T07:03:52.565Z">
+<meta property="article:published_time" content="2021-06-22T03:24:02.000Z">
+<meta property="article:modified_time" content="2021-06-22T03:24:02.704Z">
 <meta property="article:author" content="明月清风">
-<meta property="article:tag" content="css">
-<meta property="article:tag" content="js">
-<meta property="article:tag" content="html">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="明月清风的博客" type="application/atom+xml">
@@ -151,274 +149,109 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-前端面试题整理" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-git使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      前端面试题整理
+      git使用
     </h1>
   
 
         
-        <a href="/2020/09/08/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-09-08T11:48:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-08</time>
+        <a href="/2021/06/22/git%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2021-06-22T03:24:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="清除浮动的几种方法"><a href="#清除浮动的几种方法" class="headerlink" title="清除浮动的几种方法"></a>清除浮动的几种方法</h2><ul>
-<li><p>额外标签法，<div style="clear:both;"></div>（缺点：不过这个办法会增加额外的标签使 HTML 结构看起来不够简洁。）</p>
-</li>
-<li><p>使用 after 伪类</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.parent:after&#123;</span><br><span class="line">content:&quot;&quot;;</span><br><span class="line">display:block;</span><br><span class="line">clear:both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置定高</p>
-</li>
-<li><p>overflow：hidden</p>
-</li>
-<li><p>浮动外部元素</p>
-</li>
-</ul>
-<h2 id="水平垂直居中实现方式"><a href="#水平垂直居中实现方式" class="headerlink" title="水平垂直居中实现方式"></a>水平垂直居中实现方式</h2><ul>
-<li>display:flex;justify-content:center;align-items:center</li>
-<li>父：position:relative; 子：position:absolute;top:50%;left:50%;margin-top:-height/2;margin-left:-width/2; (子元素宽高已知)</li>
-<li>父：position:relative; 子：position:absolute;top:50%;left:50%;transform:translate(-50%,-50%); (子元素宽高未知)</li>
-<li>父：position:relative; 子：position:absolute;top:0;left:0;right:0;bottom:0;margin:auto auto;</li>
-</ul>
-<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><ul>
-<li>包括元素的内容（content），元素的内边距（padding），元素的边框（border），元素的外边距（margin）四个部分。</li>
-<li>在 IE 盒子模型中，width 表示 content+padding+border 这三个部分的宽度</li>
-<li>在标准的盒子模型中，width 指 content 部分的宽度</li>
-<li>box-sizing 的使用(默认 content-box)<ol>
-<li>box-sizing: content-box 是 W3C 盒子模型</li>
-<li>box-sizing: border-box 是 IE 盒子模型</li>
-</ol>
-</li>
-</ul>
+        <h1 id="git-版本控制"><a href="#git-版本控制" class="headerlink" title="git 版本控制"></a>git 版本控制</h1><h2 id="配置用户信息"><a href="#配置用户信息" class="headerlink" title="配置用户信息"></a>配置用户信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="初始化本地仓库"><a href="#初始化本地仓库" class="headerlink" title="初始化本地仓库"></a>初始化本地仓库</h2><p>在目标文件夹中使用命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看本地仓库的状态"><a href="#查看本地仓库的状态" class="headerlink" title="查看本地仓库的状态"></a>查看本地仓库的状态</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<h2 id="行内元素有哪些？块级元素有哪些？"><a href="#行内元素有哪些？块级元素有哪些？" class="headerlink" title="行内元素有哪些？块级元素有哪些？"></a>行内元素有哪些？块级元素有哪些？</h2><ul>
-<li>行内元素：span、img、input、select、option、button、textarea</li>
-<li>块级元素：div、ul、li、dl、dt、dd、p、h1~h5</li>
-</ul>
-<h2 id="简述一下-src-与-href-的区别"><a href="#简述一下-src-与-href-的区别" class="headerlink" title="简述一下 src 与 href 的区别"></a>简述一下 src 与 href 的区别</h2><ul>
-<li>href 是指向网络资源所在位置,用于超链接</li>
-<li>src 是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置,例如 js 脚本，img 图片等元素</li>
-</ul>
-<h2 id="浏览器内核"><a href="#浏览器内核" class="headerlink" title="浏览器内核"></a>浏览器内核</h2><ul>
-<li>IE: trident 内核</li>
-<li>Firefox：gecko 内核</li>
-<li>Safari：webkit 内核</li>
-<li>Opera、Chrome：Blink 内核</li>
-</ul>
-<h2 id="什么叫优雅降级和渐进增强"><a href="#什么叫优雅降级和渐进增强" class="headerlink" title="什么叫优雅降级和渐进增强"></a>什么叫优雅降级和渐进增强</h2><ul>
-<li>优雅降级是对低版本浏览器进行兼容</li>
-<li>渐进增强，针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。</li>
-</ul>
-<h2 id="显示-隐藏"><a href="#显示-隐藏" class="headerlink" title="显示/隐藏"></a>显示/隐藏</h2><ul>
-<li>display 显示类型<ol>
-<li>display:none;隐藏–&gt;不占位置</li>
-<li>display:inline/inline-block/block;显示</li>
-</ol>
-</li>
-<li>opacity 透明度<ol>
-<li>opacity:0;隐藏–&gt;占位置</li>
-<li>opacity:0.5/1;显示(0,1]</li>
-</ol>
-</li>
-<li>visibility 显示状态<ol>
-<li>visibility:hidden;隐藏–&gt;占位置</li>
-<li>visibility:visible;显示</li>
-</ol>
-</li>
-</ul>
-<h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><p>响应式布局指的是同一页面在不同屏幕尺寸下有不同的布局。传统的开发方式是 PC 端开发一套，手机端再开发一套，而使用响应式布局只要开发一套就够。</p>
-<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><ul>
-<li>面对不同分辨率设备灵活性强</li>
-<li>能够快捷解决多设备显示适应问题</li>
-<li>仅适用布局、信息、框架并不复杂的部门类型网站</li>
-<li>兼容各种设备工作量大，效率低下</li>
-<li>其实这是一种折中性质的设计解决方案，多方面因素影响而达不到最佳效果</li>
-</ul>
-<h3 id="设置-Meta-标签"><a href="#设置-Meta-标签" class="headerlink" title="设置 Meta 标签"></a>设置 Meta 标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1, maximum-scale&#x3D;1, user-scalable&#x3D;no&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="三大区域"><a href="#三大区域" class="headerlink" title="三大区域"></a>三大区域</h3><p>工作区:仓库所在文件夹,保存文件的地方<br>暂存区:版本库中暂存<br>分支所在区:HEAD 指向的分支</p>
+<h3 id="四种状态"><a href="#四种状态" class="headerlink" title="四种状态"></a>四种状态</h3><p>modified:文件有修改,但是还没有暂存<br>untracked:新建的文件,还没有被 git 管理控制住<br>staged:文件被暂存,还没有提交<br>unmodified:文件被提交</p>
+<h2 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h2><h3 id="从工作区提交到暂存区"><a href="#从工作区提交到暂存区" class="headerlink" title="从工作区提交到暂存区"></a>从工作区提交到暂存区</h3><p>基本用法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add 文件名</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>width=device-width: 是自适应手机屏幕的尺寸宽度。</li>
-<li>maximum-scale:是缩放比例的最大值。</li>
-<li>minimum-scale:是缩放比例的最小值。</li>
-<li>inital-scale:是缩放的初始化。</li>
-<li>user-scalable:是用户的可以缩放的操作。</li>
-</ul>
-<h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@media mediatype and|not|only (media feature)&#123;</span><br><span class="line">  css-code;</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:600px) and (max-width:900px)</span><br></pre></td></tr></table></figure>
+<p>一次性暂存工作区所有有修改的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure>
 
-<h4 id="常见媒体尺寸"><a href="#常见媒体尺寸" class="headerlink" title="常见媒体尺寸"></a>常见媒体尺寸</h4><ul>
-<li>@media screen and (min-width:1200px){ … }/_ 大型设备（大台式电脑，1200px 起） _/</li>
-<li>@media screen and (min-width:992px){ … }/_ 中型设备（台式电脑，992px 起） _/</li>
-<li>@media screen and (min-width:768px) { … } /_ 小型设备（平板电脑，768px 起） _/</li>
-<li>@media screen and (min-width:480px){ … }/_ 超小设备（手机，小于 768px） _/</li>
-</ul>
-<h3 id="宽高设置百分比"><a href="#宽高设置百分比" class="headerlink" title="宽高设置百分比"></a>宽高设置百分比</h3><h3 id="利用-UI-框架实现响应式布局"><a href="#利用-UI-框架实现响应式布局" class="headerlink" title="利用 UI 框架实现响应式布局"></a>利用 UI 框架实现响应式布局</h3><p>Bootstrap、elementUI 等框架提供了栅格系统</p>
-<h3 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h3><p>详见：<a target="_blank" rel="noopener" href="https://zhayushutiao.github.io/2020/09/09/%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80flex%E4%BD%BF%E7%94%A8/">flex 布局</a></p>
-<h2 id="说一下事件代理？"><a href="#说一下事件代理？" class="headerlink" title="说一下事件代理？"></a>说一下事件代理？</h2><p>事件委托是指将事件绑定到目标元素的父元素上，利用冒泡机制触发该事件<br>详见：<a target="_blank" rel="noopener" href="https://zhayushutiao.github.io/2020/09/08/JavaScript%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/">事件委托</a></p>
-<h2 id="sessionStorage-、localStorage-和-cookie-之间的区别"><a href="#sessionStorage-、localStorage-和-cookie-之间的区别" class="headerlink" title="sessionStorage 、localStorage 和 cookie 之间的区别"></a>sessionStorage 、localStorage 和 cookie 之间的区别</h2><ul>
-<li>cookie 会附在请求体里发送给服务器端，造成带宽浪费且不安全；web storage 会将数据保存在本地</li>
-<li>cookie 数据不能超过 4k，web storage 数据存储可以达到 5M</li>
-<li>cookie 默认关闭浏览器清除，可以设置有效时间；sessionStorage 关闭浏览器清除，localStorage 数据永久存储</li>
-</ul>
-<h2 id="请指出-document-load-和-document-ready-的区别？"><a href="#请指出-document-load-和-document-ready-的区别？" class="headerlink" title="请指出 document load 和 document ready 的区别？"></a>请指出 document load 和 document ready 的区别？</h2><p>这两种事件都代表的是页面文档加载时触发。</p>
-<ul>
-<li>ready 表示文档结构已经加载完成</li>
-<li>onload 包含图片在内的所有的元素加载完成</li>
-</ul>
-<h2 id="怎样添加、移除、移动、复制、创建和查找节点？"><a href="#怎样添加、移除、移动、复制、创建和查找节点？" class="headerlink" title="怎样添加、移除、移动、复制、创建和查找节点？"></a>怎样添加、移除、移动、复制、创建和查找节点？</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">createDocumentFragment(); <span class="comment">//创建一个DOM片段</span></span><br><span class="line">createElement(); <span class="comment">//创建一个具体的元素</span></span><br><span class="line">createTextNode(); <span class="comment">//创建一个文本节点</span></span><br><span class="line">appendChild(); <span class="comment">//添加</span></span><br><span class="line">removeChild(); <span class="comment">//移除</span></span><br><span class="line">replaceChild(); <span class="comment">//替换</span></span><br><span class="line">insertBefore(); <span class="comment">//插入</span></span><br><span class="line">getElementByTagName(); <span class="comment">//通过标签名称</span></span><br><span class="line">getElementByName(); <span class="comment">//通过元素的name属性的值</span></span><br><span class="line">getElementById(); <span class="comment">//通过元素id</span></span><br></pre></td></tr></table></figure>
+<p>暂存指定目录下所有有修改的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add 目录名</span><br></pre></td></tr></table></figure>
 
-<h2 id="比较-typeof-与-instanceof"><a href="#比较-typeof-与-instanceof" class="headerlink" title="比较 typeof 与 instanceof"></a>比较 typeof 与 instanceof</h2><p>JavaScript 中 typeof 和 instanceof 常用来判断一个变量是否为空，或者是什么类型的。</p>
-<ul>
-<li>typeof 返回值是一个字符串，用来说明变量的数据类型</li>
-<li>typeof 来获取一个变量是否存在，如 if(typeof a!=”undefined”)，而不要去使用 if(a) 因为如果 a 不存在（未声明）则会出错。</li>
-<li>对于 Array,Null 等特殊对象使用 typeof 一律返回 object，这正是 typeof 的局限性。</li>
-<li>instanceof 用于判断一个变量是否属于某个对象的实例。返回一个布尔值</li>
-<li>用法：a instanceof b</li>
-</ul>
-<h2 id="new-操作符具体干了什么"><a href="#new-操作符具体干了什么" class="headerlink" title="new 操作符具体干了什么"></a>new 操作符具体干了什么</h2><ul>
-<li>创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。</li>
-<li>属性和方法被加入到 this 引用的对象中。</li>
-<li>新创建的对象由 this 所引用，并且最后隐式的返回 this 。</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">obj.__proto__ = Base.prototype;</span><br><span class="line">Base.call(obj);</span><br></pre></td></tr></table></figure>
+<h3 id="从暂存区提交到-master-分支"><a href="#从暂存区提交到-master-分支" class="headerlink" title="从暂存区提交到 master 分支"></a>从暂存区提交到 master 分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交的信息&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="创建对象-类的几种方式"><a href="#创建对象-类的几种方式" class="headerlink" title="创建对象/类的几种方式"></a>创建对象/类的几种方式</h2><p>直接量、new 关键字、工厂模式、自定义构造函数</p>
-<h2 id="JavaScript-原型，原型链-有什么特点？"><a href="#JavaScript-原型，原型链-有什么特点？" class="headerlink" title="JavaScript 原型，原型链 ? 有什么特点？"></a>JavaScript 原型，原型链 ? 有什么特点？</h2><ul>
-<li>原型对象也是普通的对象，是对象一个自带隐式的<strong>proto</strong>属性，原型也有可能有自己的原型，如果一个原型对象的原型不为 null 的话，我们就称之为原型链。</li>
-<li>原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。</li>
-</ul>
-<h2 id="apply-和-call-的用法和区别"><a href="#apply-和-call-的用法和区别" class="headerlink" title="apply 和 call 的用法和区别"></a>apply 和 call 的用法和区别</h2><ul>
-<li>函数使用 call/apply 被调用,this 的值指向指定的对象,因为 call()/apply()第一个参数明确设置 this 的指向</li>
-<li>apply 第二个参数传入一个参数数组</li>
-<li>call 从第二个参数开始</li>
-</ul>
-<h2 id="javascript-里面的继承怎么实现，如何避免原型链上面的对象共享"><a href="#javascript-里面的继承怎么实现，如何避免原型链上面的对象共享" class="headerlink" title="javascript 里面的继承怎么实现，如何避免原型链上面的对象共享"></a>javascript 里面的继承怎么实现，如何避免原型链上面的对象共享</h2><p>用构造函数和原型链的混合模式去实现继承，避免对象共享可以用一个空函数当做中间变量</p>
-<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><h3 id="javascript-标准函数-this"><a href="#javascript-标准函数-this" class="headerlink" title="javascript 标准函数 this"></a>javascript 标准函数 this</h3><ol>
-<li>new 对象<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mySundae = <span class="keyword">new</span> Sundae(<span class="string">&quot;Chocolate&quot;</span>, [<span class="string">&quot;Sprinkles&quot;</span>, <span class="string">&quot;Hot Fudge&quot;</span>]);</span><br></pre></td></tr></table></figure>
-sundae 这个构造函数内的 this 的值是实例对象, 因为他使用 new 被调用.</li>
-<li>指定的对象<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> result = obj1.printName.call(obj2);</span><br></pre></td></tr></table></figure>
-函数使用 call/apply 被调用,this 的值指向指定的 obj2,因为 call()第一个参数明确设置 this 的指向</li>
-<li>上下文对象<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data.teleport();</span><br></pre></td></tr></table></figure>
-函数是对象的方法, this 指向就是那个对象,此处 this 就是指向 data.</li>
-<li>全局对象或 undefined<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data.teleport();</span><br></pre></td></tr></table></figure>
-此处是 this 指向全局对象,在严格模式下,指向 undefined.</li>
-</ol>
-<h3 id="箭头函数和-this"><a href="#箭头函数和-this" class="headerlink" title="箭头函数和 this"></a>箭头函数和 this</h3><p>对于普通函数, this 的值基于函数如何被调用, 对于箭头函数,this 的值基于函数周围的上下文, 换句话说,this 的值和函数外面的 this 的值是一样的.</p>
-<h2 id="如何理解闭包"><a href="#如何理解闭包" class="headerlink" title="如何理解闭包"></a>如何理解闭包</h2><p>当一个函数的返回值是另外一个函数，而返回的那个函数如果调用了其父函数内部的其它变量，如果返回的这个函数在外部被执行，就产生了闭包。</p>
-<h2 id="Ajax-过程"><a href="#Ajax-过程" class="headerlink" title="Ajax 过程"></a>Ajax 过程</h2><ul>
-<li>创建 XMLHttpRequest 对象,也就是创建一个异步调用对象.</li>
-<li>创建一个新的 HTTP 请求,并指定该 HTTP 请求的方法、URL 及验证信息.</li>
-<li>设置响应 HTTP 请求状态变化的函数.</li>
-<li>发送 HTTP 请求.</li>
-<li>获取异步调用返回的数据.</li>
-<li>使用 JavaScript 和 DOM 实现局部刷新.</li>
-</ul>
-<ol>
-<li>创建 Ajax 对象</li>
-<li>判断传输方式(get/post)</li>
-<li>open()</li>
-<li>send()</li>
-<li>执行回调函数</li>
-</ol>
-<h2 id="页面局部刷新的优缺点"><a href="#页面局部刷新的优缺点" class="headerlink" title="页面局部刷新的优缺点"></a>页面局部刷新的优缺点</h2><ul>
-<li>提升用户体验；减少带宽占用，服务器负载</li>
-<li>需要考虑浏览器的兼容性；页面的后退按钮没有用</li>
-</ul>
-<h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><p>协议、域名、端口号相同，是一种安全协议</p>
-<h2 id="跨域请求资源的方法有哪些？"><a href="#跨域请求资源的方法有哪些？" class="headerlink" title="跨域请求资源的方法有哪些？"></a>跨域请求资源的方法有哪些？</h2><ul>
-<li><p>proxy 请求代理</p>
-</li>
-<li><p>服务器端设置 access-control-allow-origin</p>
-</li>
-<li><p>搭建服务器中间件向目标服务器发送请求</p>
-</li>
-<li><p>jsonp 跨域</p>
-<ol>
-<li><p>原理：xmlHttpResquest 不允许跨域，带有 src 属性的标签是可以跨域的</p>
-</li>
-<li><p>需要前后端配合设置</p>
-<h3 id="原生"><a href="#原生" class="headerlink" title="原生"></a>原生</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(response);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="跳过暂存，直接提交（untracked-除外）"><a href="#跳过暂存，直接提交（untracked-除外）" class="headerlink" title="跳过暂存，直接提交（untracked 除外）"></a>跳过暂存，直接提交（untracked 除外）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -a -m <span class="string">&quot;提交的信息&quot;</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> _script = <span class="built_in">document</span>.createElement(<span class="string">&quot;script&quot;</span>);</span><br><span class="line">_script.type = <span class="string">&quot;text/javascript&quot;</span>;</span><br><span class="line">_script.src = <span class="string">&quot;跨域url/jsonp?callback=callback&quot;</span>;</span><br><span class="line"><span class="built_in">document</span>.head.appendChild(_script);</span><br></pre></td></tr></table></figure>
+<h2 id="查看提交信息"><a href="#查看提交信息" class="headerlink" title="查看提交信息"></a>查看提交信息</h2><p>详细信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="Jq"><a href="#Jq" class="headerlink" title="Jq"></a>Jq</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">    url: <span class="string">&quot;跨域请求地址&quot;</span>,</span><br><span class="line">    data: <span class="string">&quot;callback=?&quot;</span>,</span><br><span class="line">    dataType: <span class="string">&quot;jsonp&quot;</span>,</span><br><span class="line">    success: <span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&quot;ajax&quot;</span> + response);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>无法发送 post 请求</p>
-</li>
-</ol>
-</li>
-</ul>
-<h2 id="get-和-post-的区别"><a href="#get-和-post-的区别" class="headerlink" title="get 和 post 的区别"></a>get 和 post 的区别</h2><ul>
-<li>get 传参方式是通过地址栏 URL 传递，是可以直接看到 get 传递的参数，post 传参方式参数 URL 不可见，get 把请求的数据在 URL 后通过？连接，通过&amp;进行参数分割。psot 将参数存放在 HTTP 的包体内</li>
-<li>get 传递数据是通过 URL 进行传递，对传递的数据长度是受到 URL 大小的限制，URL 最大长度是 2048 个字符。post 没有长度限制</li>
-<li>get 后退不会有影响，post 后退会重新进行提交</li>
-<li>get 请求可以被缓存，post 不可以被缓存</li>
-<li>get 请求只 URL 编码，post 支持多种编码方式</li>
-<li>get 请求的记录会留在历史记录中，post 请求不会留在历史记录</li>
-<li>get 只支持 ASCII 字符，post 没有字符类型限制</li>
-</ul>
-<h2 id="http-状态码"><a href="#http-状态码" class="headerlink" title="http 状态码"></a>http 状态码</h2><ul>
-<li>2 开头 请求成功</li>
-<li>3 开头 请求被重定向</li>
-<li>4 开头 请求出错</li>
-<li>5 开头 服务器端错误</li>
-</ul>
-<h2 id="你有哪些性能优化的方法？"><a href="#你有哪些性能优化的方法？" class="headerlink" title="你有哪些性能优化的方法？"></a>你有哪些性能优化的方法？</h2><ul>
-<li>减少 http 请求次数：CSS Sprites, JS、CSS 源码压缩、图片大小控制合适，图片服务器。</li>
-<li>前端模板 JS+数据，减少由于 HTML 标签导致的带宽浪费，前端用变量保存 AJAX 请求结果，每次操作本地变量，不用请求，减少请求次数</li>
-<li>用 innerHTML 代替 DOM 操作，减少 DOM 操作次数，优化 javascript 性能。</li>
-<li>当需要设置的样式很多时设置 className 而不是直接操作 style。</li>
-<li>少用全局变量、缓存 DOM 节点查找的结果。减少 IO 读取操作。</li>
-<li>图片预加载，将样式表放在顶部，将脚本放在底部加上时间戳。</li>
-</ul>
-<h2 id="一个页面从输入-URL-到页面加载显示完成，这个过程中都发生了什么？"><a href="#一个页面从输入-URL-到页面加载显示完成，这个过程中都发生了什么？" class="headerlink" title="一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？"></a>一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</h2><ul>
-<li>当发送一个 url 请求，浏览器开启一个线程来处理这个请求，同时在远程 DNS 服务器上启动一个 DNS 查询。这能使浏览器获得请求对应的 IP 地址。</li>
-<li>浏览器与远程 Web 服务器通过 TCP 三次握手协商来建立一个 TCP/IP 连接。该握手首先由客户端尝试建立起通信，而后服务器应答并接受客户端的请求，最后由客户端发出该请求已经被接受的报文。</li>
-<li>一旦 TCP/IP 连接建立，浏览器会通过该连接向远程服务器发送 HTTP 的 GET 请求。远程服务器找到资源并使用 HTTP 响应返回该资源，值为 200 的 HTTP 响应状态表示一个正确的响应。</li>
-<li>此时，Web 服务器提供资源服务，客户端开始下载资源。</li>
-<li>请求返回后，浏览器会解析 HTML 生成 DOM Tree，其次会根据 CSS 生成 CSS Rule Tree，而 javascript 又可以根据 DOM API 操作 DOM</li>
-</ul>
-<h2 id="浏览器是如何渲染页面的？"><a href="#浏览器是如何渲染页面的？" class="headerlink" title="浏览器是如何渲染页面的？"></a>浏览器是如何渲染页面的？</h2><ul>
-<li>解析 HTML 文件，创建 DOM 树。</li>
-<li>解析 CSS</li>
-<li>将 CSS 与 DOM 合并，构建渲染树（Render Tree）</li>
-<li>布局和绘制，重绘（repaint）和重排（reflow）</li>
-</ul>
-<h2 id="use-strict-的含义，为什么使用？"><a href="#use-strict-的含义，为什么使用？" class="headerlink" title="use strict 的含义，为什么使用？"></a>use strict 的含义，为什么使用？</h2><ul>
-<li>JavaScript 严格模式（strict mode）即在严格的条件下运行。</li>
-<li>它不是一条语句，但是是一个字面量表达式，在 JavaScript 旧版本中会被忽略。</li>
-<li>“use strict” 的目的是指定代码在严格条件下执行。</li>
-<li>严格模式下不能使用未声明的变量。</li>
-</ul>
-<h3 id="为什么使用"><a href="#为什么使用" class="headerlink" title="为什么使用"></a>为什么使用</h3><ul>
-<li>消除 Javascript 语法的一些不合理、不严谨之处，减少一些怪异行为<ol>
-<li>消除代码运行的一些不安全之处，保证代码运行的安全；</li>
-<li>提高编译器效率，增加运行速度；</li>
-<li>为未来新版本的 Javascript 做好铺垫。</li>
-</ol>
-</li>
-<li>“严格模式”体现了 Javascript 更合理、更安全、更严谨的发展方向</li>
-<li>另一方面，同样的代码，在”严格模式”中，可能会有不一样的运行结果；一些在”正常模式”下可以运行的语句，在”严格模式”下将不能运行。</li>
-</ul>
-<h2 id="清除字符串前后空格"><a href="#清除字符串前后空格" class="headerlink" title="清除字符串前后空格"></a>清除字符串前后空格</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">replace(<span class="regexp">/(^\s*)(\s*)$/g</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">trim(); <span class="comment">// 无法去除中间的空格</span></span><br></pre></td></tr></table></figure>
+<p>简要信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> --pretty=oneline</span><br></pre></td></tr></table></figure>
 
-<h2 id="去除数组中的重复元素"><a href="#去除数组中的重复元素" class="headerlink" title="去除数组中的重复元素"></a>去除数组中的重复元素</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 最简单数组去重法</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique1</span>(<span class="params">array</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> n = []; <span class="comment">//一个新的临时数组</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">    <span class="comment">//遍历当前数组</span></span><br><span class="line">    <span class="keyword">if</span> (n.indexOf(array[i]) == <span class="number">-1</span>) n.push(array[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 速度最快， 占空间最多（空间换时间）</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique2</span>(<span class="params">array</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> n = &#123;&#125;,</span><br><span class="line">    r = [],</span><br><span class="line">    type;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">    type = <span class="keyword">typeof</span> array[i];</span><br><span class="line">    <span class="keyword">if</span> (!n[array[i]]) &#123;</span><br><span class="line">      n[array[i]] = [type];</span><br><span class="line">      r.push(array[i]);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (n[array[i]].indexOf(type) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">      n[array[i]].push(type);</span><br><span class="line">      r.push(array[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//数组下标判断法</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique3</span>(<span class="params">array</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> n = [array[<span class="number">0</span>]]; <span class="comment">//结果数组</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">    <span class="comment">//从第二项开始遍历</span></span><br><span class="line">    <span class="keyword">if</span> (array.indexOf(array[i]) == i) n.push(array[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// es6方法数组去重1</span></span><br><span class="line">arr = [...new <span class="built_in">Set</span>(arr)];</span><br><span class="line"><span class="comment">// es6方法数组去重2</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dedupe</span>(<span class="params">array</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(array)); <span class="comment">//Array.from()能把set结构转换为数组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="取消修改"><a href="#取消修改" class="headerlink" title="取消修改"></a>取消修改</h2><h3 id="取消工作区的修改"><a href="#取消工作区的修改" class="headerlink" title="取消工作区的修改"></a>取消工作区的修改</h3><p>文件被修改后还没有执行 git add 命令，执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- 文件名</span><br></pre></td></tr></table></figure>
 
-<h2 id="画一个三角形"><a href="#画一个三角形" class="headerlink" title="画一个三角形"></a>画一个三角形</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.a&#123;</span><br><span class="line">  width: 0;</span><br><span class="line">  height: 0;</span><br><span class="line">  border-width: 100px;</span><br><span class="line">  border-style: solid;</span><br><span class="line">  border-color: transparent #0099CC transparent transparent;</span><br><span class="line">  transform: rotate(90deg); &#x2F;*顺时针旋转90°*&#x2F;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&lt;div class&#x3D;&quot;a&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<p>取消到上一次提交的情况</p>
+<h3 id="取消暂存区的修改"><a href="#取消暂存区的修改" class="headerlink" title="取消暂存区的修改"></a>取消暂存区的修改</h3><p>文件被修改后执行了 git add 命令,但是还没有执行 git commit 命令<br>先撤销 git add 命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get reset HEAD 文件名</span><br></pre></td></tr></table></figure>
 
-<h2 id="用-js-递归的方式写-1-到-100-求和"><a href="#用-js-递归的方式写-1-到-100-求和" class="headerlink" title="用 js 递归的方式写 1 到 100 求和"></a>用 js 递归的方式写 1 到 100 求和</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> num = num1 + num2;</span><br><span class="line">  <span class="keyword">if</span> (num2 + <span class="number">1</span> &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> num;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> add(num, num2 + <span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> sum = add(<span class="number">1</span>, <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+<p>再撤销工作区的修改</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get checkout -- 文件名</span><br></pre></td></tr></table></figure>
 
-<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 比较相邻的两个元素，如果前一个比后一个大，则交换位置。</span></span><br><span class="line"><span class="comment">// 比较完第一轮的时候，最后一个元素是最大的元素。</span></span><br><span class="line"><span class="comment">// 这时候最后一个元素是最大的，所以最后一个元素就不需要参与比较大小。</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> len = arr.length;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len - <span class="number">1</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; len - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">      <span class="comment">// 相邻元素两两对比，元素交换，大的元素交换到后面</span></span><br><span class="line">      <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">        <span class="keyword">var</span> temp = arr[j];</span><br><span class="line">        arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">        arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//举个数组</span></span><br><span class="line">myArr = [<span class="number">20</span>, <span class="number">18</span>, <span class="number">27</span>, <span class="number">19</span>, <span class="number">35</span>];</span><br><span class="line"><span class="comment">//使用函数</span></span><br><span class="line">bSort(myArr);</span><br></pre></td></tr></table></figure>
+<h3 id="取消分支上的修改"><a href="#取消分支上的修改" class="headerlink" title="取消分支上的修改"></a>取消分支上的修改</h3><p>文件被修改后执行了 git add 和 git commit 命令(已经提交了)</p>
+<p>无法取消修改，使用版本回退<br>首先先使用 git log 查看每次提交的 id,然后确定需要回退到哪个版本,再使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard id</span><br></pre></td></tr></table></figure>
+
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><p>HEAD 实现版本的控制<br>git 在将每一次的提交串成一条时间线,这条时间线就称为分支<br>默认只有一条分支,master,也称之为主分支,而 HEAD 指向的就是当前分支</p>
+<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><p>将当前所在分支复制出来一条新的分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch 分支名</span><br></pre></td></tr></table></figure>
+
+<p>查看当前仓库有哪些分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+
+<p>切换分支（在一条分支上的修改不会影响到其他分支上的内容）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 分支名</span><br></pre></td></tr></table></figure>
+
+<p>分支的合并（将指定名称上分支的修改合并到当前分支上）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge 分支名</span><br></pre></td></tr></table></figure>
+
+<p>分支的删除（删除指定分支）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 分支名</span><br></pre></td></tr></table></figure>
+
+<p>如果分支没有合并,则删除失败,可以强制删除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+
+<p>注：不能删除当前所在分支</p>
+<h2 id="远程关联"><a href="#远程关联" class="headerlink" title="远程关联"></a>远程关联</h2><h3 id="添加远程管理"><a href="#添加远程管理" class="headerlink" title="添加远程管理"></a>添加远程管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin 远程仓库地址</span><br></pre></td></tr></table></figure>
+
+<p>注：origin 指代远程仓库的地址</p>
+<h3 id="将本地仓库的内容推送到远程仓库"><a href="#将本地仓库的内容推送到远程仓库" class="headerlink" title="将本地仓库的内容推送到远程仓库"></a>将本地仓库的内容推送到远程仓库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>注：-u 第一次推送时添加,之后就不需要了；如果没有 master 分支就创建</p>
+<h3 id="查看当前仓库有哪些远程关联"><a href="#查看当前仓库有哪些远程关联" class="headerlink" title="查看当前仓库有哪些远程关联"></a>查看当前仓库有哪些远程关联</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除已经存在的远程关联"><a href="#删除已经存在的远程关联" class="headerlink" title="删除已经存在的远程关联"></a>删除已经存在的远程关联</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote remove 关联名称</span><br></pre></td></tr></table></figure>
+
+<h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> 远程仓库地址</span><br></pre></td></tr></table></figure>
+
+<p>该命令会将指定远程仓库完整克隆下来,包括历史提交信息,而且还会自动添加远程关联</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+
+<p>将远程仓库上的 master 分支上的修改拉取下来</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b 分支名 远程仓库地址</span><br></pre></td></tr></table></figure>
+
+<p>拉取指定远程仓库的指定分支</p>
 
       
 
@@ -432,15 +265,7 @@ sundae 这个构造函数内的 this 的值是实例对象, 因为他使用 new 
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -496,7 +321,7 @@ sundae 这个构造函数内的 this 的值是实例对象, 因为他使用 new 
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/09/08/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/06/22/git%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -510,18 +335,9 @@ sundae 这个构造函数内的 this 的值是实例对象, 因为他使用 new 
   
 <nav id="article-nav">
   
-    <a href="/2020/09/09/CSS3%E5%8A%A8%E7%94%BB/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          CSS3动画
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/09/08/JavaScript%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaScript事件委托</div>
+    <a href="/2021/06/22/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ie兼容问题</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -548,7 +364,7 @@ sundae 这个构造函数内的 this 的值是实例对象, 因为他使用 new 
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">清除浮动的几种方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">水平垂直居中实现方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">盒子模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">行内元素有哪些？块级元素有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8B-src-%E4%B8%8E-href-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">5.</span> <span class="toc-text">简述一下 src 与 href 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8"><span class="toc-number">6.</span> <span class="toc-text">浏览器内核</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E5%8F%AB%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7%E5%92%8C%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA"><span class="toc-number">7.</span> <span class="toc-text">什么叫优雅降级和渐进增强</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA-%E9%9A%90%E8%97%8F"><span class="toc-number">8.</span> <span class="toc-text">显示&#x2F;隐藏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">9.</span> <span class="toc-text">响应式布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">9.1.</span> <span class="toc-text">优缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE-Meta-%E6%A0%87%E7%AD%BE"><span class="toc-number">9.2.</span> <span class="toc-text">设置 Meta 标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">9.3.</span> <span class="toc-text">媒体查询</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%AA%92%E4%BD%93%E5%B0%BA%E5%AF%B8"><span class="toc-number">9.3.1.</span> <span class="toc-text">常见媒体尺寸</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%BD%E9%AB%98%E8%AE%BE%E7%BD%AE%E7%99%BE%E5%88%86%E6%AF%94"><span class="toc-number">9.4.</span> <span class="toc-text">宽高设置百分比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E7%94%A8-UI-%E6%A1%86%E6%9E%B6%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">9.5.</span> <span class="toc-text">利用 UI 框架实现响应式布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex-%E5%B8%83%E5%B1%80"><span class="toc-number">9.6.</span> <span class="toc-text">flex 布局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86%EF%BC%9F"><span class="toc-number">10.</span> <span class="toc-text">说一下事件代理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sessionStorage-%E3%80%81localStorage-%E5%92%8C-cookie-%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">11.</span> <span class="toc-text">sessionStorage 、localStorage 和 cookie 之间的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E6%8C%87%E5%87%BA-document-load-%E5%92%8C-document-ready-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">12.</span> <span class="toc-text">请指出 document load 和 document ready 的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%8E%E6%A0%B7%E6%B7%BB%E5%8A%A0%E3%80%81%E7%A7%BB%E9%99%A4%E3%80%81%E7%A7%BB%E5%8A%A8%E3%80%81%E5%A4%8D%E5%88%B6%E3%80%81%E5%88%9B%E5%BB%BA%E5%92%8C%E6%9F%A5%E6%89%BE%E8%8A%82%E7%82%B9%EF%BC%9F"><span class="toc-number">13.</span> <span class="toc-text">怎样添加、移除、移动、复制、创建和查找节点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%94%E8%BE%83-typeof-%E4%B8%8E-instanceof"><span class="toc-number">14.</span> <span class="toc-text">比较 typeof 与 instanceof</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-number">15.</span> <span class="toc-text">new 操作符具体干了什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1-%E7%B1%BB%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">16.</span> <span class="toc-text">创建对象&#x2F;类的几种方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript-%E5%8E%9F%E5%9E%8B%EF%BC%8C%E5%8E%9F%E5%9E%8B%E9%93%BE-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F"><span class="toc-number">17.</span> <span class="toc-text">JavaScript 原型，原型链 ? 有什么特点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#apply-%E5%92%8C-call-%E7%9A%84%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB"><span class="toc-number">18.</span> <span class="toc-text">apply 和 call 的用法和区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript-%E9%87%8C%E9%9D%A2%E7%9A%84%E7%BB%A7%E6%89%BF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%EF%BC%8C%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E5%8E%9F%E5%9E%8B%E9%93%BE%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%85%B1%E4%BA%AB"><span class="toc-number">19.</span> <span class="toc-text">javascript 里面的继承怎么实现，如何避免原型链上面的对象共享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#this"><span class="toc-number">20.</span> <span class="toc-text">this</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#javascript-%E6%A0%87%E5%87%86%E5%87%BD%E6%95%B0-this"><span class="toc-number">20.1.</span> <span class="toc-text">javascript 标准函数 this</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E5%92%8C-this"><span class="toc-number">20.2.</span> <span class="toc-text">箭头函数和 this</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85"><span class="toc-number">21.</span> <span class="toc-text">如何理解闭包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ajax-%E8%BF%87%E7%A8%8B"><span class="toc-number">22.</span> <span class="toc-text">Ajax 过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%B1%80%E9%83%A8%E5%88%B7%E6%96%B0%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">23.</span> <span class="toc-text">页面局部刷新的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5"><span class="toc-number">24.</span> <span class="toc-text">同源策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%B5%84%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">25.</span> <span class="toc-text">跨域请求资源的方法有哪些？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%94%9F"><span class="toc-number">25.1.</span> <span class="toc-text">原生</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jq"><span class="toc-number">25.2.</span> <span class="toc-text">Jq</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#get-%E5%92%8C-post-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">26.</span> <span class="toc-text">get 和 post 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http-%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">27.</span> <span class="toc-text">http 状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E6%9C%89%E5%93%AA%E4%BA%9B%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-number">28.</span> <span class="toc-text">你有哪些性能优化的方法？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2%E4%BB%8E%E8%BE%93%E5%85%A5-URL-%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E6%98%BE%E7%A4%BA%E5%AE%8C%E6%88%90%EF%BC%8C%E8%BF%99%E4%B8%AA%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%83%BD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">29.</span> <span class="toc-text">一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E6%B8%B2%E6%9F%93%E9%A1%B5%E9%9D%A2%E7%9A%84%EF%BC%9F"><span class="toc-number">30.</span> <span class="toc-text">浏览器是如何渲染页面的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#use-strict-%E7%9A%84%E5%90%AB%E4%B9%89%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="toc-number">31.</span> <span class="toc-text">use strict 的含义，为什么使用？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8"><span class="toc-number">31.1.</span> <span class="toc-text">为什么使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E5%90%8E%E7%A9%BA%E6%A0%BC"><span class="toc-number">32.</span> <span class="toc-text">清除字符串前后空格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%BB%E9%99%A4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0"><span class="toc-number">33.</span> <span class="toc-text">去除数组中的重复元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%BB%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2"><span class="toc-number">34.</span> <span class="toc-text">画一个三角形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8-js-%E9%80%92%E5%BD%92%E7%9A%84%E6%96%B9%E5%BC%8F%E5%86%99-1-%E5%88%B0-100-%E6%B1%82%E5%92%8C"><span class="toc-number">35.</span> <span class="toc-text">用 js 递归的方式写 1 到 100 求和</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="toc-number">36.</span> <span class="toc-text">冒泡排序</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#git-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">1.</span> <span class="toc-text">git 版本控制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.</span> <span class="toc-text">配置用户信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="toc-number">1.2.</span> <span class="toc-text">初始化本地仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E7%9A%84%E7%8A%B6%E6%80%81"><span class="toc-number">1.3.</span> <span class="toc-text">查看本地仓库的状态</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E5%A4%A7%E5%8C%BA%E5%9F%9F"><span class="toc-number">1.3.1.</span> <span class="toc-text">三大区域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E7%A7%8D%E7%8A%B6%E6%80%81"><span class="toc-number">1.3.2.</span> <span class="toc-text">四种状态</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4"><span class="toc-number">1.4.</span> <span class="toc-text">提交</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E5%B7%A5%E4%BD%9C%E5%8C%BA%E6%8F%90%E4%BA%A4%E5%88%B0%E6%9A%82%E5%AD%98%E5%8C%BA"><span class="toc-number">1.4.1.</span> <span class="toc-text">从工作区提交到暂存区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E6%9A%82%E5%AD%98%E5%8C%BA%E6%8F%90%E4%BA%A4%E5%88%B0-master-%E5%88%86%E6%94%AF"><span class="toc-number">1.4.2.</span> <span class="toc-text">从暂存区提交到 master 分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%BF%87%E6%9A%82%E5%AD%98%EF%BC%8C%E7%9B%B4%E6%8E%A5%E6%8F%90%E4%BA%A4%EF%BC%88untracked-%E9%99%A4%E5%A4%96%EF%BC%89"><span class="toc-number">1.4.3.</span> <span class="toc-text">跳过暂存，直接提交（untracked 除外）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E4%BF%A1%E6%81%AF"><span class="toc-number">1.5.</span> <span class="toc-text">查看提交信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%96%E6%B6%88%E4%BF%AE%E6%94%B9"><span class="toc-number">1.6.</span> <span class="toc-text">取消修改</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%96%E6%B6%88%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E4%BF%AE%E6%94%B9"><span class="toc-number">1.6.1.</span> <span class="toc-text">取消工作区的修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%96%E6%B6%88%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E4%BF%AE%E6%94%B9"><span class="toc-number">1.6.2.</span> <span class="toc-text">取消暂存区的修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%96%E6%B6%88%E5%88%86%E6%94%AF%E4%B8%8A%E7%9A%84%E4%BF%AE%E6%94%B9"><span class="toc-number">1.6.3.</span> <span class="toc-text">取消分支上的修改</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-number">1.7.</span> <span class="toc-text">分支</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF"><span class="toc-number">1.7.1.</span> <span class="toc-text">创建分支</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E5%85%B3%E8%81%94"><span class="toc-number">1.8.</span> <span class="toc-text">远程关联</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-number">1.8.1.</span> <span class="toc-text">添加远程管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E7%9A%84%E5%86%85%E5%AE%B9%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">1.8.2.</span> <span class="toc-text">将本地仓库的内容推送到远程仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E4%BB%93%E5%BA%93%E6%9C%89%E5%93%AA%E4%BA%9B%E8%BF%9C%E7%A8%8B%E5%85%B3%E8%81%94"><span class="toc-number">1.8.3.</span> <span class="toc-text">查看当前仓库有哪些远程关联</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%85%B3%E8%81%94"><span class="toc-number">1.8.4.</span> <span class="toc-text">删除已经存在的远程关联</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%89%E5%8F%96"><span class="toc-number">1.8.5.</span> <span class="toc-text">拉取</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -656,7 +472,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">事件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -672,18 +500,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
@@ -696,11 +512,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">vuex</a>
+                <a href="javascript:void(0)" class="js-tag color3">ie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">angular</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -708,11 +528,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">setTimeout</a>
+                <a href="javascript:void(0)" class="js-tag color5">vuex</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">flex</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">setTimeout</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -721,10 +545,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">axios</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
             
             <div class="clearfix"></div>
