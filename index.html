@@ -153,13 +153,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/06/22/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">ie兼容问题</a>
+      <a class="article-title" href="/2021/06/17/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">ie兼容问题</a>
     </h1>
   
 
         
-        <a href="/2021/06/22/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2021-06-22T02:47:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
+        <a href="/2021/06/17/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2021-06-17T02:47:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-17</time>
 </a>
         
       </header>
@@ -197,7 +197,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/06/22/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/06/17/ie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">展开全文 >></a>
         </p>
       
 
@@ -234,13 +234,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/06/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/">ng-template、ng-content、ng-container</a>
+      <a class="article-title" href="/2021/05/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/">ng-template、ng-content、ng-container</a>
     </h1>
   
 
         
-        <a href="/2021/06/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/" class="archive-article-date">
-  	<time datetime="2021-06-22T02:46:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
+        <a href="/2021/05/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/" class="archive-article-date">
+  	<time datetime="2021-05-22T02:46:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-22</time>
 </a>
         
       </header>
@@ -249,35 +249,7 @@
       
         <h1 id="ng-template、ng-content、ng-container"><a href="#ng-template、ng-content、ng-container" class="headerlink" title="ng-template、ng-content、ng-container"></a>ng-template、ng-content、ng-container</h1><h2 id="一、ng-template"><a href="#一、ng-template" class="headerlink" title="一、ng-template"></a>一、ng-template</h2><p>ng-template 是 Angular 结构型指令中的一种，用于定义模板渲染 HTML(模板加载)。定义的模板不会直接显示出来，需要通过其他结构型指令（如 ng-if）或 template-ref 将模块内容渲染到页面中。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> *<span class="attr">ngIf</span>=<span class="string">&quot;show else xxxx&quot;</span>&gt;</span>控制ng-template是否显示和隐藏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ng-template</span> #<span class="attr">xxxx</span>&gt;</span></span><br><span class="line">  ng-template中的内容显示和隐藏，通过结构性指令*ngif来控制，当ngif为false,这显示</span><br><span class="line"><span class="tag">&lt;/<span class="name">ng-template</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二、ng-container"><a href="#二、ng-container" class="headerlink" title="二、ng-container"></a>二、ng-container</h2><p>ng-container 既不是一个 Component 组件，也不是一个 Directive 指令，只是单纯的一个特殊 tag 标签。ng-container 可以直接包裹任何元素，包括文本，但本身不会生成元素标签，也不会影响页面样式和布局。包裹的内容，如果不通过其他指令控制，会直接渲染到页面中。</p>
-<ul>
-<li>可以把 ng-container 简单理解为一个逻辑容器。用来做一些逻辑处理的。减少不必要的 html 标签。</li>
-</ul>
-<p>ng-container 有一个用处就是配合 ngFor 和 ngIf 使用。我们知道 ngFor 和 ngIf 不能同时处在同一个元素上。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-container</span> *<span class="attr">ngFor</span>=<span class="string">&quot;let item of arr&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> *<span class="attr">ngIf</span>=<span class="string">&quot;item % 2 === 0&quot;</span>&gt;</span>&#123;&#123;item&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ng-container</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="三、ng-content-插槽"><a href="#三、ng-content-插槽" class="headerlink" title="三、ng-content 插槽"></a>三、ng-content 插槽</h2><p>在实际的使用中，我们会用到内容投影，即插槽的概念。在 vue 中可以通过 slot 来标记插槽，从而达到从父组件向子组件传递显示内容。</p>
-<p>在 angular 中，同样可以使用 ng-content 来实现与 vue 中的 slot 同样的功能和效果。</p>
-<h3 id="简单投影（单个插槽-默认插槽-匿名插槽）"><a href="#简单投影（单个插槽-默认插槽-匿名插槽）" class="headerlink" title="简单投影（单个插槽| 默认插槽| 匿名插槽）"></a>简单投影（单个插槽| 默认插槽| 匿名插槽）</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>我是嵌入的外部内容，相当于vue的slot<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是ng content 内容投影<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>ng content测试<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="针对性投影-具名插槽"><a href="#针对性投影-具名插槽" class="headerlink" title="针对性投影(具名插槽)"></a>针对性投影(具名插槽)</h3><p>针对性投影，相当于 vue 中 slot 的 name 属性和组件的 slot 属性的映射关系</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;slot&quot;</span>&gt;</span>我是嵌入的外部内容，相当于vue的slot<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是ng content 内容投影<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>ng content测试<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span> <span class="attr">select</span>=<span class="string">&quot;p&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span> <span class="attr">select</span>=<span class="string">&quot;.slot&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-content</span>&gt;</span><span class="tag">&lt;/<span class="name">ng-content</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="ngProjectAs"><a href="#ngProjectAs" class="headerlink" title="ngProjectAs"></a>ngProjectAs</h3><p>通过 ng-content 的 select 属性可以指定 html 标签或者组件投射 ng-content 位置上来。但是呢有个限制条件。不管是 select 标签或者组件的名字、或者 class、或者是属性他们都是作用在直接子节点上。</p>
-<p>有时你的内部组件会被隐藏在另一个更大的组件中。有时你只需要将其包装在额外的容器中即可应用 ngIf 或 ngSwitch。无论什么原因，通常情况下，你的内部组件不是包装器的直接子节点。这时可以设置 ngProjectAs 属性：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-container</span> <span class="attr">ngProjectAs</span>=<span class="string">&quot;slot&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>div<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ng-container</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">app-slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ng-container</span> <span class="attr">ngProjectAs</span>=<span class="string">&quot;slot&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>div<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ng-container</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">app-slot</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>ng-content 支持一个 select 属性，可以让你在特定的地方投射具体的内容。该属性支持 CSS 选择器（标签选择器、类选择器、属性选择器、…）来匹配你想要的内容。如果 ng-content 上没有设置 select 属性，它将接收全部内容，或接收不匹配任何其他 ng-content 元素的内容。</li>
-</ul>
-
+        
       
 
       
@@ -300,7 +272,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/06/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/22/ng-template%E3%80%81ng-content%E3%80%81ng-container/">展开全文 >></a>
         </p>
       
 
@@ -677,11 +649,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+                <a href="javascript:void(0)" class="js-tag color3">事件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事件</a>
+                <a href="javascript:void(0)" class="js-tag color4">es6</a>
               </li>
              
               <li class="article-tag-list-item">
